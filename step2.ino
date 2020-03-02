@@ -32,3 +32,6 @@ void loop(){
   }
   Serial.println(millis()); //print the number of milliseconds since the program began to the serial connection
 }
+
+
+//after you load this code onto your arduino, note what happens to the LED after about 32 seconds. Afterwards, move to the next step
