@@ -3,7 +3,7 @@
 int ledPins[] = {3, 5, 6, 10, 11}; //an array can be thought of as a list. Instead of having multiple variables. I can store multiple values inside of one variable and reference that value's position in the list. Note that the first element in the array is at position zero.
 unsigned long prevMillis = 0; 
 int interval = 100;
-boolean ledState = false;
+boolean ledState = true;
 int currentLED = 0; //declare and initialize a variable to determine which LED is currently illuminated
 
 void setup() {
@@ -22,7 +22,7 @@ void loop() {
             Serial.println(currentLED); //print the current LED address to serial 
       prevMillis = millis(); //reset timer
       if (ledState == false){ //if the current LED has been turned off, now we can move on to the next LED in the array
-        currentLED++;
+        currentLED++; //increment currentLED variable
       }
       ledState = !ledState; //toggle the boolean variable so that on the next loop, the next LED will be turned on
     }
