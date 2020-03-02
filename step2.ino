@@ -1,4 +1,5 @@
 //NOW LETS USE A MILLIS() TIMER INSTEAD OF A DELAY
+//https://learn.adafruit.com/multi-tasking-the-arduino-part-1/using-millis-for-timing
 
 int ledPin = 6;
 int prevMillis = 0;
