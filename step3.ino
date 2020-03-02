@@ -1,4 +1,6 @@
-//LETS CHANGE THAT "INT" TO AN "UNSIGNED LONG" DATATYPE on line 11
+//LETS CHANGE THAT "int" TO AN "unsigned long" DATATYPE on line 12
+//unsigned long variables can range from 0 to 4,294,967,295 whereas -32,768 to 32,767
+//now the timer will be able to run for days, as opposed to seconds without running out of room as we continue to update the value of prevMillis to the current time (in milliseconds from the start of the program)
 
 
 
@@ -7,8 +9,6 @@ int ledPin = 6;
 
 //declare and initialize our prevMillis variable
 //this variable stores the time after each interval passes, so that we can begin a new count
-//unsigned long variables can range from 0 to 4,294,967,295 whereas -32,768 to 32,767
-//now the timer will be able to run for days, as opposed to seconds
 unsigned long prevMillis = 0;
 
 //set the interval (how often in milliseconds our code will run)
